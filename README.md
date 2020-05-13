@@ -2,7 +2,8 @@
  
 The boards.txt file contains various parameters for various menu options for different Arduino supported microcontrollers. These options for the board are some of the parameters which are only specific for some board or they are shown only when the microcontroller is selected. The boards.txt file is situated in the directory **./Arduino15/packages/arduino/hardware/avr/1.8.2/boards.txt.** As these are hidden in the home directory for linux we have to press ctrl+H thus to show hidden files.
 
-There are other files as shown in the below column, ![](RackMultipart20200513-4-zdh0ow_html_582ab9954cf45bc5.png)
+There are other files as shown in the below column, 
+![File description](/Images/Files_table.png)
 
 These are the various files situated in the 1.8.2 folder, for now we have to edit boards.txt file,
 
