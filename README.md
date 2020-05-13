@@ -7,6 +7,10 @@ There are other files as shown in the below column along with directories,
 Name| Description | Type |
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
 boards.txt | Contains the build instructions and configurations for each board | Files
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 
 These are the various files situated in the 1.8.2 folder, for now we have to edit boards.txt file,
 
