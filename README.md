@@ -5,6 +5,10 @@ The boards.txt file contains various parameters for various menu options for dif
 There are other files as shown in the below column, 
 ![File description](/Images/Files_table.png)
 
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+
 These are the various files situated in the 1.8.2 folder, for now we have to edit boards.txt file,
 
 uno.name=e-Yantra eYFi\_Mega
