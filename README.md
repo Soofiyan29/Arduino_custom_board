@@ -4,7 +4,7 @@ The boards.txt file contains various parameters for various menu options for dif
 
 There are other files as shown in the below column along with directories, 
 
-Name| #Description | #Type 
+Name| Description | Type |
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
 boards.txt | Contains the build instructions and configurations for each board | Files
 
