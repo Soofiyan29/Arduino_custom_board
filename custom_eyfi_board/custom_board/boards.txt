@@ -79,36 +79,36 @@ uno.build.variant=standard
 
 ##############################################################
 
-new_custom.name=Arduino/Genuino eyfi_Mega
+uno.name=e-Yantra eyfi_Mega
 
-new_custom.vid.0=0x2341
-new_custom.pid.0=0x0043
-new_custom.vid.1=0x2341
-new_custom.pid.1=0x0001
-new_custom.vid.2=0x2A03
-new_custom.pid.2=0x0043
-new_custom.vid.3=0x2341
-new_custom.pid.3=0x0243
+uno.vid.0=0x2341
+uno.pid.0=0x0043
+uno.vid.1=0x2341
+uno.pid.1=0x0001
+uno.vid.2=0x2A03
+uno.pid.2=0x0043
+uno.vid.3=0x2341
+uno.pid.3=0x0243
 
-new_custom.upload.tool=avrdude
-new_custom.upload.protocol=arduino
-new_custom.upload.maximum_size=32256
-new_custom.upload.maximum_data_size=2048
-new_custom.upload.speed=115200
+uno.upload.tool=avrdude
+uno.upload.protocol=arduino
+uno.upload.maximum_size=32256
+uno.upload.maximum_data_size=2048
+uno.upload.speed=115200
 
-new_custom.bootloader.tool=avrdude
-new_custom.bootloader.low_fuses=0xFF
-new_custom.bootloader.high_fuses=0xDE
-new_custom.bootloader.extended_fuses=0xFD
-new_custom.bootloader.unlock_bits=0x3F
-new_custom.bootloader.lock_bits=0x0F
-new_custom.bootloader.file=optiboot/optiboot_atmega328.hex
+uno.bootloader.tool=avrdude
+uno.bootloader.low_fuses=0xFF
+uno.bootloader.high_fuses=0xDE
+uno.bootloader.extended_fuses=0xFD
+uno.bootloader.unlock_bits=0x3F
+uno.bootloader.lock_bits=0x0F
+uno.bootloader.file=optiboot/optiboot_atmega328.hex
 
-new_custom.build.mcu=atmega328p
-new_custom.build.f_cpu=16000000L
-new_custom.build.board=AVR_UNO
-new_custom.build.core=arduino
-new_custom.build.variant=new_custom
+uno.build.mcu=atmega328p
+uno.build.f_cpu=16000000L
+uno.build.board=AVR_UNO
+uno.build.core=arduino
+uno.build.variant=eYFi-Mega
 
 ##############################################################
 

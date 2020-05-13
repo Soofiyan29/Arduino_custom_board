@@ -4,7 +4,6 @@
     {
       "name": "eyfi-Mega",
       "maintainer": "Soofiyan Atar",
-      "email" : "soofiyanatar.meetme@gmail.com",
       "platforms":
       [
         {
@@ -12,13 +11,13 @@
           "architecture": "avr",
           "version": "1.8.1",
           "category": "Contributed",
-          "url": "https://github.com/Soofiyan29/Arduino_custom_board/tree/master/custom_board",
-          "archiveFileName": "RoboHat-0.0.12.zip",
-          "checksum": "SHA-256:e6a4c0b37a90a922777556d3af04c0396d9fc7fc47dfa5220f3d3da2410a3bf1",
-          "size": "2381077",
+          "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/custom_eyfi_board/custom_board.zip",
+          "archiveFileName": "custom_board.zip",
+          "checksum": "SHA-256:1927B1B20B0FFA36D1F1BFBA028F90756CEE82B42227C898417ABCFA56ADC6F6",
+          "size": "4876916",
           "boards": [
             {
-              "name": "Robo HAT MM1"
+              "name": "new_custom"
             }
           ],
           "toolsDependencies":
