@@ -7,7 +7,9 @@ There are other files as shown in the below column along with directories,
 Name          | Description   | Type
 ------------- | ------------- | -------------
 boards.txt    | Contains the build instructions and configurations for each board  | Files
-Content Cell  | Content Cell  | Content Cell
+platform.txt  | Contains the compiler instructions used for building programs for the board and we have to change only the version and type of the board  | File
+bootloaders    | Contains bootloader for each board and bootloader is important and custom for each board  | direcotry
+varients    | Contains the board layout and pin configuration for each board in the package. This is where we will change most of the configuration for our custom board  | Directory
 
 These are the various files situated in the 1.8.2 folder, for now we have to edit boards.txt file,
 

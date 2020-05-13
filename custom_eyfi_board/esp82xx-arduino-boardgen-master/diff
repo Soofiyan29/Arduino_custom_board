@@ -1,0 +1,7 @@
+./build-boards.txt.py | sort	| grep -v '^[# \t]*$' | grep -v '#.*' > a
+sort ./example-boards.txt	| grep -v '^[# \t]*$' | grep -v '#.*' > b
+\
+diff -u b a \
+	| grep -v '\.Debug\.' \
+	| grep -v '\.DebugLevel\.' \
+	| less
