@@ -56,3 +56,22 @@ Installing Arduino CLI:
 - Windows:
 	- Link : [Windows 64 bit](https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_64bit.zip)
 	- Link : [Windows 32 bit](https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_32bit.zip)
+
+Commands:
+1. arduino-cli is a container of commands and each command has its own dedicated help text that can be shown with the help command like this:
+```
+$ arduino-cli help core
+```
+2. Arduino CLI doesn't strictly require a configuration file to work because the command line interface provides any possible functionality. However, having one can spare you a lot of typing when issuing a command, so let's go ahead and create it with:
+```
+$ arduino-cli config init
+```
+3. To create a new sketch named MyFirstSketch in the current directory, run the following command:
+```
+$ arduino-cli sketch new MyFirstSketch
+```
+This file will be saved in the /home/username/ directory
+4. The first thing to do upon a fresh install is to update the local cache of available platforms and libraries by running:
+```
+$ arduino-cli core update-index
+```
