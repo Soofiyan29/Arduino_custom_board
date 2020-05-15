@@ -13,57 +13,34 @@ varients    | Contains the board layout and pin configuration for each board in 
 
 These are the various files situated in the 1.8.2 folder, for now we have to edit boards.txt file,
 
-uno.name=e-Yantra eYFi\_Mega
-
+```
+uno.name=e-Yantra eYFi\_Mega  
 uno.vid.0=0x2341
-
 uno.pid.0=0x0043
-
 uno.vid.1=0x2341
-
 uno.pid.1=0x0001
-
 uno.vid.2=0x2A03
-
 uno.pid.2=0x0043
-
 uno.vid.3=0x2341
-
 uno.pid.3=0x0243
-
 uno.upload.tool=avrdude
-
 uno.upload.protocol=arduino
-
 uno.upload.maximum\_size=32256
-
 uno.upload.maximum\_data\_size=2048
-
 uno.upload.speed=115200
-
 uno.bootloader.tool=avrdude
-
 uno.bootloader.low\_fuses=0xFF
-
 uno.bootloader.high\_fuses=0xDE
-
 uno.bootloader.extended\_fuses=0xFD
-
-uno.bootloader.unlock\_bits=0x3F
-
+uno.bootloader.unlock\_bits=0x3
 uno.bootloader.lock\_bits=0x0F
-
 uno.bootloader.file=optiboot/optiboot\_atmega328.hex
-
 uno.build.mcu=atmega328p
-
 uno.build.f\_cpu=16000000L
-
 uno.build.board=AVR\_UNO
-
 uno.build.core=arduino
-
 uno.build.variant = standard
+```
 
 Here we have added the name as **e-Yantra eYFi\_Mega**
 
