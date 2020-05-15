@@ -48,5 +48,7 @@ as our board name so we have to just change the name now whenever you will be pl
 
 Installing Arduino CLI:
 - MacOS/Linux:
-	- ```brew update
-brew install arduino-cli```
+	- ```
+	brew update
+brew install arduino-cli
+```
