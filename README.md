@@ -45,3 +45,8 @@ uno.build.variant = standard
 Here we have added the name as **e-Yantra eYFi\_Mega**
 
 as our board name so we have to just change the name now whenever you will be plugging the uno in the pc there you will see this name instead of Arduino/Genuine Uno.
+
+Installing Arduino CLI:
+- MacOS/Linux:
+	- ```brew update
+brew install arduino-cli```
