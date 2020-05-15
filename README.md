@@ -14,7 +14,7 @@ varients    | Contains the board layout and pin configuration for each board in 
 These are the various files situated in the 1.8.2 folder, for now we have to edit boards.txt file,
 
 ```ruby
-uno.name=e-Yantra eYFi\_Mega  
+uno.name=e-Yantra eYFi_Mega  
 uno.vid.0=0x2341
 uno.pid.0=0x0043
 uno.vid.1=0x2341
