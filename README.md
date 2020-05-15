@@ -1,3 +1,4 @@
+[Drive link](https://drive.google.com/open?id=1bKhigrruck6pl0mA11rRQiQc2liFzoFC) for all files,
 # Arduino_custom_board
  
 The boards.txt file contains various parameters for various menu options for different Arduino supported microcontrollers. These options for the board are some of the parameters which are only specific for some board or they are shown only when the microcontroller is selected. The boards.txt file is situated in the directory **./Arduino15/packages/arduino/hardware/avr/1.8.2/boards.txt.** As these are hidden in the home directory for linux we have to press ctrl+H thus to show hidden files.
@@ -55,6 +56,3 @@ Installing Arduino CLI:
 - Windows:
 	- Link : [Windows 64 bit](https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_64bit.zip)
 	- Link : [Windows 32 bit](https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_32bit.zip)
-
-
-
