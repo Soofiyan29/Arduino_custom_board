@@ -13,8 +13,8 @@ varients    | Contains the board layout and pin configuration for each board in 
 
 These are the various files situated in the 1.8.2 folder, for now we have to edit boards.txt file,
 
-'''
-uno.name=e-Yantra eYFi\_Mega
+```
+uno.name=e-Yantra eYFi\_Mega  
 uno.vid.0=0x2341
 uno.pid.0=0x0043
 uno.vid.1=0x2341
@@ -40,7 +40,7 @@ uno.build.f\_cpu=16000000L
 uno.build.board=AVR\_UNO
 uno.build.core=arduino
 uno.build.variant = standard
-'''
+```
 
 Here we have added the name as **e-Yantra eYFi\_Mega**
 
