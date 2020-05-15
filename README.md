@@ -52,7 +52,7 @@ Installing Arduino CLI:
 	brew update
 	brew install arduino-cli
 ```
--Windows:
+- Windows:
 	- Link : [Windows 64 bit](https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_64bit.zip)
 	- Link : [Windows 32 bit](https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_32bit.zip)
 
