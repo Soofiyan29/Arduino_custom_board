@@ -75,3 +75,20 @@ This file will be saved in the /home/username/ directory
 ```
 $ arduino-cli core update-index
 ```
+5. After connecting the board to your PC by using the USB cable, you should be able to check whether it's been recognized by running:
+```
+$ arduino-cli board list
+```
+6. For compiling the uno board which is situated in e-Yantra folder we have to run:
+```
+$ arduino-cli compile --fqbn e-Yantra:avr:eyfi MyFirstSketch
+```
+7. For uploading the code on arduino uno first plug the board and run this command:
+```
+$ arduino-cli board list
+``` 
+And then note the Port of the particular board and now paste here by running:
+```
+$ arduino-cli upload -p /dev/ttyACM0 --fqbn e-Yantra:avr:eyfi MyFirstSketch
+```
+/dev/ttyACM0 is the port of the board.
