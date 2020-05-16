@@ -4,10 +4,6 @@
       "name": "my_board",
       "maintainer": "Jane Developer",
       "websiteURL": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board",
-      "email": "jane@janedeveloper.org",
-      "help": {
-        "online": "http://janedeveloper.org/forum/myboard"
-      },
       "platforms": [
         {
           "name": "avr",
