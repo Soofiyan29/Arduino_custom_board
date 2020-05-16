@@ -6,7 +6,7 @@
       "websiteURL": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board",
       "platforms": [
         {
-          "name": "avr",
+          "name": "my_board",
           "architecture": "avr",
           "version": "1.8.2",
           "category": "Arduino",
@@ -16,7 +16,7 @@
           "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board/my_board.zip",
           "archiveFileName": "my_board.zip",
           "checksum": "SHA-256:ec3ff8a1dc96d3ba6f432b9b837a35fd4174a34b3d2927de1d51010e8b94f9f1",
-          "size": "263700",
+          "size": "2.70600000",
           "boards": [
             {"name": "Arduino Yún"},
             {"name": "Arduino Uno"},
