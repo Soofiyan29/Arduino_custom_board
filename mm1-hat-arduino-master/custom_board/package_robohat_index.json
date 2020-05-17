@@ -13,7 +13,7 @@
           "architecture": "samd",
           "version": "0.0.26",
           "category": "Contributed",
-          "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/mm1-hat-arduino-master/custom_board/RoboHat-0.0.26.zip?raw=true",
+          "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/mm1-hat-arduino-master/custom_board/RoboHat-0.0.26.zip",
           "archiveFileName": "RoboHat-0.0.26.zip",
           "checksum": "SHA-256:1927B1B20B0FFA36D1F1BFBA028F90756CEE82B42227C898417ABCFA56ADC6F6",
           "size": "8773152",
