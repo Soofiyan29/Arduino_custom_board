@@ -1,12 +1,12 @@
 {
   "packages": [
     {
-      "name": "e-Yantra",
+      "name": "my_board",
       "maintainer": "e-Yantra",
       "websiteURL": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board",
       "platforms": [
         {
-          "name": "e-Yantra board",
+          "name": "my_board",
           "architecture": "avr",
           "version": "1.8.2",
           "category": "Contributed",
