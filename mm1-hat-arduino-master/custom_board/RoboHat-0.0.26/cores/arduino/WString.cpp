@@ -20,6 +20,8 @@
 */
 
 #include "WString.h"
+#include "itoa.h"
+#include "avr/dtostrf.h"
 
 /*********************************************/
 /*  Constructors                             */
@@ -121,7 +123,7 @@ String::String(double value, unsigned char decimalPlaces)
 
 String::~String()
 {
-	if (buffer) free(buffer);
+	free(buffer);
 }
 
 /*********************************************/

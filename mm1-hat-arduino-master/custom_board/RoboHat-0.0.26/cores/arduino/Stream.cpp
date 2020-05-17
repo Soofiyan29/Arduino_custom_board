@@ -35,6 +35,7 @@ int Stream::timedRead()
   do {
     c = read();
     if (c >= 0) return c;
+    yield(); // running TinyUSB task
   } while(millis() - _startMillis < _timeout);
   return -1;     // -1 indicates timeout
 }
@@ -47,6 +48,7 @@ int Stream::timedPeek()
   do {
     c = peek();
     if (c >= 0) return c;
+    yield(); // running TinyUSB task
   } while(millis() - _startMillis < _timeout);
   return -1;     // -1 indicates timeout
 }
@@ -218,6 +220,7 @@ size_t Stream::readBytes(char *buffer, size_t length)
 
 size_t Stream::readBytesUntil(char terminator, char *buffer, size_t length)
 {
+  if (length < 1) return 0;
   size_t index = 0;
   while (index < length) {
     int c = timedRead();

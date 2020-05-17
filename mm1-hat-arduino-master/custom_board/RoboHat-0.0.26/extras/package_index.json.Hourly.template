@@ -10,57 +10,49 @@
       },
       "platforms": [
         {
-          "name": "Arduino AVR core - Hourly build",
-          "architecture": "avr",
+          "name": "Arduino SAMD core - Hourly build",
+          "architecture": "samd",
           "version": "%%VERSION%%",
           "category": "Arduino",
-          "url": "http://downloads.arduino.cc/Hourly/avr/%%FILENAME%%",
+          "url": "http://downloads.arduino.cc/Hourly/samd/%%FILENAME%%",
           "archiveFileName": "%%FILENAME%%",
           "checksum": "SHA-256:%%CHECKSUM%%",
           "size": "%%SIZE%%",
           "boards": [
-            {"name": "Arduino Yún"},
-            {"name": "Arduino Uno"},
-            {"name": "Arduino Uno WiFi"},
-            {"name": "Arduino Diecimila"},
-            {"name": "Arduino Nano"},
-            {"name": "Arduino Mega"},
-            {"name": "Arduino MegaADK"},
-            {"name": "Arduino Leonardo"},
-            {"name": "Arduino Leonardo Ethernet"},
-            {"name": "Arduino Micro"},
-            {"name": "Arduino Esplora"},
-            {"name": "Arduino Mini"},
-            {"name": "Arduino Ethernet"},
-            {"name": "Arduino Fio"},
-            {"name": "Arduino BT"},
-            {"name": "Arduino LilyPadUSB"},
-            {"name": "Arduino Lilypad"},
-            {"name": "Arduino Pro"},
-            {"name": "Arduino ATMegaNG"},
-            {"name": "Arduino Robot Control"},
-            {"name": "Arduino Robot Motor"},
-            {"name": "Arduino Gemma"},
-            {"name": "Adafruit Circuit Playground"},
-            {"name": "Arduino Yún Mini"},
-            {"name": "Arduino Industrial 101"},
-            {"name": "Linino One"}
+            {
+              "name": "Arduino Zero"
+            }
           ],
           "toolsDependencies": [
             {
               "packager": "arduino",
-              "name": "avr-gcc",
-              "version": "4.9.2-atmel3.5.4-arduino2"
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
             },
             {
               "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.3.0-arduino9"
+              "name": "bossac",
+              "version": "1.7.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino6-static"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.1.0"
             },
             {
               "packager": "arduino",
               "name": "arduinoOTA",
-              "version": "1.1.1"
+              "version": "1.2.0"
             }
           ]
         }

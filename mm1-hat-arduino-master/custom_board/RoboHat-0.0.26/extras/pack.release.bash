@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-#  pack.*.bash - Bash script to help packaging avr core releases.
+#  pack.*.bash - Bash script to help packaging samd core releases.
 #  Copyright (c) 2015 Arduino LLC.  All right reserved.
 #
 #  This library is free software; you can redistribute it and/or
@@ -23,11 +23,11 @@ PWD=`pwd`
 FOLDERNAME=`basename $PWD`
 THIS_SCRIPT_NAME=`basename $0`
 
-rm -f avr-$VERSION.tar.bz2
+rm -f samd-$VERSION.tar.bz2
 
 cd ..
-tar --transform "s|$FOLDERNAME|$FOLDERNAME-$VERSION|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf avr-$VERSION.tar.bz2 $FOLDERNAME
+tar --transform "s|$FOLDERNAME|$FOLDERNAME-$VERSION|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf samd-$VERSION.tar.bz2 $FOLDERNAME
 cd -
 
-mv ../avr-$VERSION.tar.bz2 .
+mv ../samd-$VERSION.tar.bz2 .
 

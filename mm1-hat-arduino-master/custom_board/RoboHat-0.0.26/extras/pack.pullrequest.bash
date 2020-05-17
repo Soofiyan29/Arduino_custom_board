@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-#  pack.*.bash - Bash script to help packaging avr core releases.
+#  pack.*.bash - Bash script to help packaging samd core releases.
 #  Copyright (c) 2015 Arduino LLC.  All right reserved.
 #
 #  This library is free software; you can redistribute it and/or
@@ -24,7 +24,7 @@ VERSION=`grep version= platform.txt | sed 's/version=//g'`
 PWD=`pwd`
 FOLDERNAME=`basename $PWD`
 THIS_SCRIPT_NAME=`basename $0`
-FILENAME=package_avr-b${BUILD_NUMBER}.tar.bz2
+FILENAME=package_samd-b${BUILD_NUMBER}.tar.bz2
 
 rm -f $FILENAME
 
@@ -32,7 +32,7 @@ rm -f $FILENAME
 sed -i "s/name=.*/name=SAMD Pull request #${PR_NUMBER} (Build ${BUILD_NUMBER})/" platform.txt
 
 cd ..
-tar --transform "s|$FOLDERNAME|avr-PR${PR_NUMBER}_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
+tar --transform "s|$FOLDERNAME|samd-PR${PR_NUMBER}_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
 cd -
 
 mv ../$FILENAME .
@@ -46,5 +46,5 @@ sed s/%%BUILD_NUMBER%%/${BUILD_NUMBER}/ |
 sed s/%%VERSION%%/${VERSION}-build-${BUILD_NUMBER}/ |
 sed s/%%FILENAME%%/${FILENAME}/ |
 sed s/%%CHECKSUM%%/${CHKSUM}/ |
-sed s/%%SIZE%%/${SIZE}/ > package_avr-b${BUILD_NUMBER}_index.json
+sed s/%%SIZE%%/${SIZE}/ > package_samd-b${BUILD_NUMBER}_index.json
 

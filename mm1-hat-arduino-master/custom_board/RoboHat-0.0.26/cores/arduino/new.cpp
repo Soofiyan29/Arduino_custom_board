@@ -8,7 +8,7 @@
 
   This library is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
   See the GNU Lesser General Public License for more details.
 
   You should have received a copy of the GNU Lesser General Public
@@ -24,11 +24,6 @@ void *operator new(size_t size) {
 
 void *operator new[](size_t size) {
   return malloc(size);
-}
-
-void * operator new(size_t size, void * ptr) noexcept {
-  (void)size;
-  return ptr;
 }
 
 void operator delete(void * ptr) {

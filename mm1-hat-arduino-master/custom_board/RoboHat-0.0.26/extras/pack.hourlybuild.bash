@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-#  pack.*.bash - Bash script to help packaging avr core releases.
+#  pack.*.bash - Bash script to help packaging samd core releases.
 #  Copyright (c) 2015 Arduino LLC.  All right reserved.
 #
 #  This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@ VERSION=9.9.9-Hourly
 PWD=`pwd`
 FOLDERNAME=`basename $PWD`
 THIS_SCRIPT_NAME=`basename $0`
-FILENAME=package_avr-hourly-b${BUILD_NUMBER}.tar.bz2
+FILENAME=package_samd-hourly-b${BUILD_NUMBER}.tar.bz2
 
 rm -f $FILENAME
 
@@ -33,7 +33,7 @@ rm -f $FILENAME
 sed -i "s/name=.*/name=SAMD Hourly Build ${BUILD_NUMBER} (${CURR_TIME})/" platform.txt
 
 cd ..
-tar --transform "s|$FOLDERNAME|avr-hourly_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
+tar --transform "s|$FOLDERNAME|samd-hourly_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
 cd -
 
 mv ../$FILENAME .
@@ -47,5 +47,5 @@ sed "s/%%CURR_TIME%%/${CURR_TIME_SED}/" |
 sed "s/%%VERSION%%/${VERSION}/" |
 sed "s/%%FILENAME%%/${FILENAME}/" |
 sed "s/%%CHECKSUM%%/${CHKSUM}/" |
-sed "s/%%SIZE%%/${SIZE}/" > package_avr-hourly-build_index.json
+sed "s/%%SIZE%%/${SIZE}/" > package_samd-hourly-build_index.json
 
