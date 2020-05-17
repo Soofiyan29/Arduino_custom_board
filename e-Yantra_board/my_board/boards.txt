@@ -46,7 +46,7 @@ yun.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
-uno.name=Arduino Uno
+uno.name=e-Yantra board
 
 uno.vid.0=0x2341
 uno.pid.0=0x0043
