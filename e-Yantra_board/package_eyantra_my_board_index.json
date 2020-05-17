@@ -12,8 +12,8 @@
           "category": "Contributed",
           "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board/my_board.zip",
           "archiveFileName": "my_board.zip",
-          "checksum": "SHA-256:f376570575e9ba295043aebbf2aeb280b40c75fb5626d9f409242f59770e4067",
-          "size": "16648764",
+          "checksum": "SHA-256:8882686feb9e4cf1a324656829337c456b6886ceb300c7a93598eb1f83c9c565",
+          "size": "16648767",
           "boards": [
             {"name": "Arduino Yún"},
             {"name": "Arduino Uno"},
