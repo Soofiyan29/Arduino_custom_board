@@ -15,7 +15,7 @@
           "checksum": "SHA-256:8882686feb9e4cf1a324656829337c456b6886ceb300c7a93598eb1f83c9c565",
           "size": "6014499",
           "boards": [
-            {"name": "Arduino YÃºn"},
+            {"name": "Arduino Yún"},
             {"name": "e-Yantra board"},
             {"name": "Arduino Diecimila"},
             {"name": "Arduino Nano"},
