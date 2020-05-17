@@ -1,0 +1,49 @@
+{
+  "packages":
+  [
+    {
+      "name": "robohat",
+      "maintainer": "Robotics Masters",
+      "websiteURL": "https://roboticsmasters.co",
+      "email" : "techsupport@roboticsmasters.co",
+      "platforms":
+      [
+        {
+          "name": "Robo HAT Boards",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/robotics-masters/mm1-hat-arduino/blob/master/custom_board/RoboHat-0.0.26.zip?raw=true",
+          "archiveFileName": "RoboHat-0.0.26.zip",
+          "checksum": "SHA-256:1927B1B20B0FFA36D1F1BFBA028F90756CEE82B42227C898417ABCFA56ADC6F6",
+          "size": "8773152",
+          "boards": [
+            {"name": "Arduino Yún"},
+            {"name": "Arduino Uno"},
+            {"name": "Arduino Diecimila"},
+            {"name": "Arduino Nano"},
+            {"name": "Arduino Mega"},
+            {"name": "Arduino MegaADK"},
+            {"name": "Arduino Leonardo"}
+          ],
+          "toolsDependencies":
+          [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
+        }
+      ],
+      "tools":
+      [
+      ]
+    }
+  ]
+}

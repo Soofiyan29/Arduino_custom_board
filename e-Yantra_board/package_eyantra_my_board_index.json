@@ -21,7 +21,7 @@
             {"name": "Arduino Nano"},
             {"name": "Arduino Mega"},
             {"name": "Arduino MegaADK"},
-            {"name": "Arduino Leonardo"},
+            {"name": "Arduino Leonardo"}
           ],
           "toolsDependencies": [
             {
