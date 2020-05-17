@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "my_board",
+      "name": "myboard",
       "maintainer": "Jane Developer",
       "websiteURL": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board",
       "platforms": [
