@@ -91,4 +91,4 @@ And then note the Port of the particular board and now paste here by running:
 ```
 $ arduino-cli upload -p /dev/ttyACM0 --fqbn e-Yantra:avr:eyfi MyFirstSketch
 ```
-/dev/ttyACM0 is the port of the board.
+/dev/ttyACM0 is the port of the board.	
