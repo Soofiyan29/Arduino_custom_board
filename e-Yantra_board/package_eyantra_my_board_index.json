@@ -12,7 +12,7 @@
           "category": "Contributed",
           "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board/my_board.zip",
           "archiveFileName": "my_board.zip",
-          "checksum": "SHA-256:1927B1B20B0FFA36D1F1BFBA028F90756CEE82B42227C898417ABCFA56ADC6F6",
+          "checksum": "SHA-256:f376570575e9ba295043aebbf2aeb280b40c75fb5626d9f409242f59770e4067",
           "size": "16648764",
           "boards": [
             {"name": "Arduino Yún"},
