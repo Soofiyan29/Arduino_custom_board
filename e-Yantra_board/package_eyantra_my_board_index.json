@@ -1,12 +1,12 @@
 {
   "packages": [
     {
-      "name": "my_board",
+      "name": "my board",
       "maintainer": "e-Yantra",
       "websiteURL": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board",
       "platforms": [
         {
-          "name": "my_board",
+          "name": "my eyfi board",
           "architecture": "avr",
           "version": "1.8.2",
           "category": "Contributed",
@@ -15,8 +15,8 @@
           "checksum": "SHA-256:8882686feb9e4cf1a324656829337c456b6886ceb300c7a93598eb1f83c9c565",
           "size": "6014499",
           "boards": [
-            {"name": "Arduino Yún"},
-            {"name": "Arduino Uno"},
+            {"name": "Arduino YÃºn"},
+            {"name": "e-Yantra board"},
             {"name": "Arduino Diecimila"},
             {"name": "Arduino Nano"},
             {"name": "Arduino Mega"},
