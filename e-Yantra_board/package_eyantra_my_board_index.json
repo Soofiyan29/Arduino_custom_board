@@ -10,7 +10,7 @@
           "architecture": "avr",
           "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board/my_board.zip",
+          "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board/my_board.zip?raw=true",
           "archiveFileName": "my_board.zip",
           "checksum": "SHA-256:d3d30b90a8638414a6f6ea0b1cf7ae81265c199baa5c380c093a7c510295d74f",
           "size": "6003859",
