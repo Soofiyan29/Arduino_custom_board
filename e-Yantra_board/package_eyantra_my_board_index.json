@@ -1,36 +1,30 @@
 {
   "packages": [
     {
-      "name": "my board",
+      "name": "my_board",
       "maintainer": "e-Yantra",
       "websiteURL": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board",
       "platforms": [
         {
-          "name": "my eyfi board",
+          "name": "eYFi-Mega avr board",
           "architecture": "avr",
-          "version": "1.8.2",
+          "version": "1.0.0",
           "category": "Contributed",
           "url": "https://github.com/Soofiyan29/Arduino_custom_board/blob/master/e-Yantra_board/my_board.zip",
           "archiveFileName": "my_board.zip",
-          "checksum": "SHA-256:8882686feb9e4cf1a324656829337c456b6886ceb300c7a93598eb1f83c9c565",
-          "size": "6014499",
+          "checksum": "SHA-256:d3d30b90a8638414a6f6ea0b1cf7ae81265c199baa5c380c093a7c510295d74f",
+          "size": "6003859",
           "boards": [
-            {"name": "Arduino Yún"},
-            {"name": "e-Yantra board"},
-            {"name": "Arduino Diecimila"},
-            {"name": "Arduino Nano"},
-            {"name": "Arduino Mega"},
-            {"name": "Arduino MegaADK"},
-            {"name": "Arduino Leonardo"}
+            {"name": "eYFi-Mega Atmega 2560"}
           ],
           "toolsDependencies": [
             {
-              "packager": "arduino",
+              "packager": "my_board",
               "name": "avr-gcc",
               "version": "4.8.1-arduino5"
             },
             {
-              "packager": "arduino",
+              "packager": "my_board",
               "name": "avrdude",
               "version": "6.0.1-arduino5"
             }
