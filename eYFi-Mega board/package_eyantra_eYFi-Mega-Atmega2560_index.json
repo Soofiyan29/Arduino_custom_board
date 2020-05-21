@@ -2,10 +2,7 @@
   "packages": [
     {
       "name": "eYFi-Mega-Atmega2560-board",
-      "maintainer": "e-Yantra", 
-      "help": {
-        "online": "http://products.e-yantra.org/eyfi-mega/documentation/"
-      }, 
+      "maintainer": "e-Yantra",
       "websiteURL": "http://products.e-yantra.org/eyfi-mega/", 
       "platforms": [
         {
