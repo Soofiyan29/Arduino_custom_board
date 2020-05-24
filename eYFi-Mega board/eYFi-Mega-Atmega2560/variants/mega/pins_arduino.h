@@ -35,6 +35,9 @@
 #define PIN_SPI_MISO  (50)
 #define PIN_SPI_SCK   (52)
 
+#define SS0   (53)
+#define SS1   (83)
+
 static const uint8_t SS   = PIN_SPI_SS;
 static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
@@ -42,6 +45,7 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 
 #define PIN_WIRE_SDA        (20)
 #define PIN_WIRE_SCL        (21)
+
 
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
@@ -81,6 +85,23 @@ static const uint8_t A12 = PIN_A12;
 static const uint8_t A13 = PIN_A13;
 static const uint8_t A14 = PIN_A14;
 static const uint8_t A15 = PIN_A15;
+
+static const uint8_t ADC0 = PIN_A0;
+static const uint8_t ADC1 = PIN_A1;
+static const uint8_t ADC2 = PIN_A2;
+static const uint8_t ADC3 = PIN_A3;
+static const uint8_t ADC4 = PIN_A4;
+static const uint8_t ADC5 = PIN_A5;
+static const uint8_t ADC6 = PIN_A6;
+static const uint8_t ADC7 = PIN_A7;
+static const uint8_t ADC8 = PIN_A8;
+static const uint8_t ADC9 = PIN_A9;
+static const uint8_t ADC10 = PIN_A10;
+static const uint8_t ADC11 = PIN_A11;
+static const uint8_t ADC12 = PIN_A12;
+static const uint8_t ADC13 = PIN_A13;
+static const uint8_t ADC14 = PIN_A14;
+static const uint8_t ADC15 = PIN_A15;
 
 #define PE0 0
 #define PE1 1
@@ -166,6 +187,33 @@ static const uint8_t A15 = PIN_A15;
 #define PJ5 81
 #define PJ6 82
 #define PJ7 83
+
+#define INT4 2
+#define INT5 3
+#define INT6 71
+#define INT7 72
+
+#define RX2 17
+#define TX2 16
+#define RX3 15
+#define TX3 14
+#define RX1 19
+#define TX1 18
+
+#define OC0A 13
+#define OC0B 4
+#define OC1A 11
+#define OC1B 12
+#define OC1C 13
+#define OC2A 10
+#define OC2B 9
+#define OC3A 5
+#define OC4A 6
+#define OC4B 7
+#define OC4C 8
+#define OC5A 46
+#define OC5B 45
+#define OC5C 44
 
 // A majority of the pins are NOT PCINTs, SO BE WARNED (i.e. you cannot use them as receive pins)
 // Only pins available for RECEIVE (TRANSMIT can be on any pin):
