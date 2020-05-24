@@ -25,7 +25,7 @@
 
 #include <avr/pgmspace.h>
 
-#define NUM_DIGITAL_PINS            70
+#define NUM_DIGITAL_PINS            84
 #define NUM_ANALOG_INPUTS           16
 #define analogInputToDigitalPin(p)  ((p < 16) ? (p) + 54 : -1)
 #define digitalPinHasPWM(p)         (((p) >= 2 && (p) <= 13) || ((p) >= 44 && (p)<= 46))
@@ -82,20 +82,109 @@ static const uint8_t A13 = PIN_A13;
 static const uint8_t A14 = PIN_A14;
 static const uint8_t A15 = PIN_A15;
 
+#define PE0 0
+#define PE1 1
+#define PE4 2
+#define PE5 3
+#define PG5 4
+#define PE3 5
+#define PH3 6
+#define PH4 7
+#define PH5 8
+#define PH6 9
+#define PB4 10
+#define PB5 11
+#define PB6 12
+#define PB7 13
+#define PJ1 14
+#define PJ0 15
+#define PH1 16
+#define PH0 17
+#define PD3 18
+#define PD2 19
+#define PD1 20
+#define PD0 21
+#define PA0 22
+#define PA1 23
+#define PA2 24
+#define PA3 25 
+#define PA4 26
+#define PA5 27
+#define PA6 28
+#define PA7 29
+#define PC7 30
+#define PC6 31
+#define PC5 32
+#define PC4 33
+#define PC3 34
+#define PC2 35
+#define PC1 36
+#define PC0 37
+#define PD7 38
+#define PG2 39
+#define PG1 40
+#define PG0 41
+#define PL7 42
+#define PL6 43
+#define PL5 44
+#define PL4 45
+#define PL3 46
+#define PL2 47
+#define PL1 48
+#define PL0 49
+#define PB3 50
+#define PB2 51
+#define PB1 52
+#define PB0 53
+#define PF0 54
+#define PF1 55
+#define PF2 56
+#define PF3 57
+#define PF4 58
+#define PF5 59
+#define PF6 60
+#define PF7 61
+#define PK0 62
+#define PK1 63
+#define PK2 64
+#define PK3 65
+#define PK4 66
+#define PK5 67
+#define PK6 68
+#define PK7 69
+#define PE2 70
+#define PE6 71
+#define PE7 72
+#define PH2 73
+#define PH7 74
+#define PD4 75
+#define PD5 76
+#define PD6 77
+#define PJ2 78
+#define PJ3 79
+#define PJ4 80
+#define PJ5 81
+#define PJ6 82
+#define PJ7 83
+
 // A majority of the pins are NOT PCINTs, SO BE WARNED (i.e. you cannot use them as receive pins)
 // Only pins available for RECEIVE (TRANSMIT can be on any pin):
 // (I've deliberately left out pin mapping to the Hardware USARTs - seems senseless to me)
-// Pins: 10, 11, 12, 13,  50, 51, 52, 53,  62, 63, 64, 65, 66, 67, 68, 69
+// Pins: 10, 11, 12, 13,  50, 51, 52, 53,  62, 63, 64, 65, 66, 67, 68, 69, 0, 78, 79, 80, 81, 82, 14, 15
 
-#define digitalPinToPCICR(p)    ( (((p) >= 10) && ((p) <= 13)) || \
+#define digitalPinToPCICR(p)    ( (((p) >= 10) && ((p) <= 15)) || \
+								  ((p) == 0) || \
+								  (((p) >= 78) && ((p) <= 82)) || \
                                   (((p) >= 50) && ((p) <= 53)) || \
                                   (((p) >= 62) && ((p) <= 69)) ? (&PCICR) : ((uint8_t *)0) )
 
 #define digitalPinToPCICRbit(p) ( (((p) >= 10) && ((p) <= 13)) || (((p) >= 50) && ((p) <= 53)) ? 0 : \
+								( ((p) == 0) || (((p) >= 78) && ((p) <= 82)) || (((p) >= 14) && ((p) <= 15)) ? 1 : \
                                 ( (((p) >= 62) && ((p) <= 69)) ? 2 : \
                                 0 ) )
 
 #define digitalPinToPCMSK(p)    ( (((p) >= 10) && ((p) <= 13)) || (((p) >= 50) && ((p) <= 53)) ? (&PCMSK0) : \
+								( ((p) == 0) || (((p) >= 78) && ((p) <= 82)) || (((p) >= 14) && ((p) <= 15)) ? (&PCMSK1) : \
                                 ( (((p) >= 62) && ((p) <= 69)) ? (&PCMSK2) : \
                                 ((uint8_t *)0) ) )
 
@@ -104,10 +193,14 @@ static const uint8_t A15 = PIN_A15;
                                 ( ((p) == 51) ? 2 : \
                                 ( ((p) == 52) ? 1 : \
                                 ( ((p) == 53) ? 0 : \
+                                ( ((p) == 0) ? 0 : \
+                                ( ((p) == 14) ? 2 : \
+                                ( ((p) == 15) ? 1 : \
+                                ( (((p) >= 78) && ((p) <= 82)) ? ((p) - 75) : \
                                 ( (((p) >= 62) && ((p) <= 69)) ? ((p) - 62) : \
-                                0 ) ) ) ) ) )
+                                0 ) ) ) ) ) ) ) ) ) )
 
-#define digitalPinToInterrupt(p) ((p) == 2 ? 0 : ((p) == 3 ? 1 : ((p) >= 18 && (p) <= 21 ? 23 - (p) : NOT_AN_INTERRUPT)))
+#define digitalPinToInterrupt(p) ((p) == 2 ? 0 : ((p) == 3 ? 1 : ((p) == 71 ? 6 : ((p) == 72 ? 7 : ((p) >= 18 && (p) <= 21 ? 23 - (p) : NOT_AN_INTERRUPT)))))
 
 #ifdef ARDUINO_MAIN
 
@@ -232,6 +325,21 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PK	, // PK 5 ** 67 ** A13	
 	PK	, // PK 6 ** 68 ** A14	
 	PK	, // PK 7 ** 69 ** A15	
+	/******************/
+	PE  , // PE 2 ** 70 ** D70
+	PE  , // PE 6 ** 71 ** D71(T3, INT6)
+	PE  , // PE 7 ** 72 ** D72(ICP3, INT7)
+	PH  , // PH 2 ** 73 ** D73
+	PH  , // PH 7 ** 74 ** D74
+	PD  , // PD 4 ** 75 ** D75(T4)
+	PD  , // PD 5 ** 76 ** D76
+	PD  , // PD 6 ** 77 ** D77(T1)
+	PJ  , // PJ 2 ** 78 ** D78(PCINT11)
+	PJ  , // PJ 3 ** 79 ** D79(PCINT12)
+	PJ  , // PJ 4 ** 80 ** D80(PCINT13)
+	PJ  , // PJ 5 ** 81 ** D81(PCINT14)
+	PJ  , // PJ 6 ** 82 ** D82(PCINT15)
+	PJ  , // PJ 7 ** 83 ** D83
 };
 
 const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
@@ -307,6 +415,21 @@ const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
 	_BV( 5 )	, // PK 5 ** 67 ** A13	
 	_BV( 6 )	, // PK 6 ** 68 ** A14	
 	_BV( 7 )	, // PK 7 ** 69 ** A15	
+	/*********************/
+	_BV( 2 )    , // PE 2 ** 70 ** D70
+	_BV( 6 )    , // PE 6 ** 71 ** D71
+	_BV( 7 )    , // PE 7 ** 72 ** D72
+	_BV( 2 )    , // PH 2 ** 73 ** D73
+	_BV( 7 )    , // PH 7 ** 74 ** D74
+	_BV( 4 )    , // PD 4 ** 75 ** D75
+	_BV( 5 )    , // PD 5 ** 76 ** D76
+	_BV( 6 )    , // PD 6 ** 77 ** D77
+	_BV( 2 )    , // PJ 2 ** 78 ** D78
+	_BV( 3 )    , // PJ 3 ** 79 ** D79
+	_BV( 4 )    , // PJ 4 ** 80 ** D80
+	_BV( 5 )    , // PJ 5 ** 81 ** D81
+	_BV( 6 )    , // PJ 6 ** 82 ** D82
+	_BV( 7 )    , // PJ 7 ** 83 ** D83
 };
 
 const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
@@ -382,6 +505,21 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
 	NOT_ON_TIMER	, // PK 5 ** 67 ** A13	
 	NOT_ON_TIMER	, // PK 6 ** 68 ** A14	
 	NOT_ON_TIMER	, // PK 7 ** 69 ** A15	
+	/******************/
+	NOT_ON_TIMER	, // PE 2 ** 70 ** D70
+	NOT_ON_TIMER	, // PE 6 ** 71 ** D71
+	NOT_ON_TIMER	, // PE 7 ** 72 ** D72
+	NOT_ON_TIMER	, // PH 2 ** 73 ** D73
+	NOT_ON_TIMER	, // PH 7 ** 74 ** D74
+	NOT_ON_TIMER	, // PD 4 ** 75 ** D75
+	NOT_ON_TIMER	, // PD 5 ** 76 ** D76
+	NOT_ON_TIMER	, // PD 6 ** 77 ** D77
+	NOT_ON_TIMER	, // PJ 2 ** 78 ** D78
+	NOT_ON_TIMER	, // PJ 3 ** 79 ** D79
+	NOT_ON_TIMER	, // PJ 4 ** 80 ** D80
+	NOT_ON_TIMER	, // PJ 5 ** 81 ** D81
+	NOT_ON_TIMER	, // PJ 6 ** 82 ** D82
+	NOT_ON_TIMER	, // PJ 7 ** 83 ** D83
 };
 
 #endif
