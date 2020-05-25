@@ -5,18 +5,8 @@ menu.cpu=Processor
 ##############################################################
 eyfi.name=eYFi-Mega Atmega2560
 
-eyfi.vid.0=0x2341
-eyfi.pid.0=0x0010
-eyfi.vid.1=0x2341
-eyfi.pid.1=0x0042
-eyfi.vid.2=0x2A03
-eyfi.pid.2=0x0010
-eyfi.vid.3=0x2A03
-eyfi.pid.3=0x0042
-eyfi.vid.4=0x2341
-eyfi.pid.4=0x0210
-eyfi.vid.5=0x2341
-eyfi.pid.5=0x0242
+eyfi.vid.0=0x0403
+eyfi.pid.0=0x6001
 
 eyfi.upload.tool=avrdude
 eyfi.upload.maximum_data_size=8192
@@ -28,7 +18,7 @@ eyfi.bootloader.lock_bits=0x0F
 
 eyfi.build.f_cpu=16000000L
 eyfi.build.core=arduino
-eyfi.build.variant=mega
+eyfi.build.variant=eyfi_mega
 # default board may be overridden by the cpu menu
 eyfi.build.board=AVR_MEGA2560
 

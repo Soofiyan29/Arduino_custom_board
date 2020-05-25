@@ -50,7 +50,11 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
-#define LED_BUILTIN 13
+#define LED_RED 6
+#define LED_GREEN 8 
+#define LED_BLUE 7
+
+#define USER_SW 72 
 
 #define PIN_A0   (54)
 #define PIN_A1   (55)
