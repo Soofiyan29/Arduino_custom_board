@@ -12,8 +12,8 @@
           "category": "Contributed",
           "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eYFi-Mega%20board/eYFi-Mega-Atmega2560.zip?raw=true",
           "archiveFileName": "eYFi-Mega-Atmega2560.zip",
-          "checksum": "SHA-256:706d54dd5a1b517a396b6f9101ca9c11ad303c094db80a8db8625a0057230cbf",
-          "size": "5998305",
+          "checksum": "SHA-256:b74681b3944ebc9424cb6a5b09b99b124bbd5ad37909589a0765233700764074",
+          "size": "5998040",
           "boards": [
             {"name": "eYFi-Mega Atmega 2560"}
           ],
