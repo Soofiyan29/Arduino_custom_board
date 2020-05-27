@@ -32,28 +32,28 @@
           "name": "eyfi-mega-avr-flasher-custom", 
           "systems": [
             {
-              "url": "http://172.20.10.12/eyfi-mega-avr-flasher.zip", 
+              "url": "http://172.16.42.130/eyfi-mega-avr-flasher.zip", 
               "checksum": "SHA-256:7bcfdc0dfc1b5f9a0ef13ea4070a455d00b468125d5a8a64bacf1ddc021edac9", 
               "host": "i686-mingw32", 
               "archiveFileName": "eyfi-mega-avr-flasher.zip", 
               "size": "5430816"
             },
             {
-              "url": "http://172.20.10.12/eyfi-mega-avr-flasher-linux.tar", 
+              "url": "http://172.16.42.130/eyfi-mega-avr-flasher-linux.tar.xz", 
               "checksum": "SHA-256:51fa1c5abc21f50cebcdf3dbc85a17389f3467abfb7c84812fcb4cdf191439e8", 
               "host": "x86_64-pc-linux-gnu", 
               "archiveFileName": "eyfi-mega-avr-flasher-linux.tar", 
               "size": "5404160"
             }, 
             {
-              "url": "http://172.20.10.12/eyfi-mega-avr-flasher-linux.tar", 
+              "url": "http://172.16.42.130/eyfi-mega-avr-flasher-linux.tar.xz", 
               "checksum": "SHA-256:51fa1c5abc21f50cebcdf3dbc85a17389f3467abfb7c84812fcb4cdf191439e8", 
               "host": "i686-pc-linux-gnu", 
               "archiveFileName": "eyfi-mega-avr-flasher-linux.tar", 
               "size": "5404160"
             }, 
             {
-              "url": "http://172.20.10.12/eyfi-mega-avr-flasher-linux.tar", 
+              "url": "http://172.16.42.130/eyfi-mega-avr-flasher-linux.tar.xz", 
               "checksum": "SHA-256:51fa1c5abc21f50cebcdf3dbc85a17389f3467abfb7c84812fcb4cdf191439e8", 
               "host": "arm-linux-gnueabihf", 
               "archiveFileName": "eyfi-mega-avr-flasher-linux.tar", 
