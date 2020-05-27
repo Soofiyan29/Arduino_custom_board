@@ -19,7 +19,7 @@
           ],
           "toolsDependencies": [
             {
-              "packager": "arduino",
+              "packager": "eYFi-Mega-Atmega2560-board",
               "name": "eyfi-mega-avr-flasher-custom",
               "version": "1.0.0"
             }
