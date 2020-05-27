@@ -42,21 +42,21 @@
               "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher.tar.gz?raw=true", 
               "checksum": "SHA-256:784b5c6ed84fc5b5f357c526c0de40320e9e657cc626206580e67bb6fb52b6fa", 
               "host": "x86_64-pc-linux-gnu", 
-              "archiveFileName": "eyfi-mega-avr-flasher.tar.xz", 
+              "archiveFileName": "eyfi-mega-avr-flasher.tar.gz", 
               "size": "5345975"
             }, 
             {
               "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher.tar.gz?raw=true", 
               "checksum": "SHA-256:784b5c6ed84fc5b5f357c526c0de40320e9e657cc626206580e67bb6fb52b6fa", 
               "host": "i686-pc-linux-gnu", 
-              "archiveFileName": "eyfi-mega-avr-flasher.tar.xz", 
+              "archiveFileName": "eyfi-mega-avr-flasher.tar.gz", 
               "size": "5345975"
             }, 
             {
               "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher.tar.gz?raw=true", 
               "checksum": "SHA-256:784b5c6ed84fc5b5f357c526c0de40320e9e657cc626206580e67bb6fb52b6fa", 
               "host": "arm-linux-gnueabihf", 
-              "archiveFileName": "eyfi-mega-avr-flasher.tar.xz", 
+              "archiveFileName": "eyfi-mega-avr-flasher.tar.gz", 
               "size": "5345975"
             }
           ]
