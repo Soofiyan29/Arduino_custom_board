@@ -39,25 +39,25 @@
               "size": "5431088"
             },
             {
-              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar.gz?raw=true", 
-              "checksum": "SHA-256:faf575538d7c144258d4c715c1c5a9dbe840604a7b13ed05d4140b3aacba9fe5", 
+              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar.xz?raw=true", 
+              "checksum": "SHA-256:8cc40bf458519812616f3872427638ceec7f618ec29565b38ee79186d4f11dc7", 
               "host": "x86_64-pc-linux-gnu", 
-              "archiveFileName": "eyfi-mega-avr-flasher-linux.tar.gz", 
-              "size": "5345221"
+              "archiveFileName": "eyfi-mega-avr-flasher-linux.tar.xz", 
+              "size": "5334828"
             }, 
             {
-              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar.gz?raw=true", 
-              "checksum": "SHA-256:faf575538d7c144258d4c715c1c5a9dbe840604a7b13ed05d4140b3aacba9fe5", 
+              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar.xz?raw=true", 
+              "checksum": "SHA-256:8cc40bf458519812616f3872427638ceec7f618ec29565b38ee79186d4f11dc7", 
               "host": "i686-pc-linux-gnu", 
-              "archiveFileName": "eyfi-mega-avr-flasher-linux.tar.gz", 
-              "size": "5345221"
+              "archiveFileName": "eyfi-mega-avr-flasher-linux.tar.xz", 
+              "size": "5334828"
             }, 
             {
-              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar.gz?raw=true", 
-              "checksum": "SHA-256:faf575538d7c144258d4c715c1c5a9dbe840604a7b13ed05d4140b3aacba9fe5", 
+              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar.xz?raw=true", 
+              "checksum": "SHA-256:8cc40bf458519812616f3872427638ceec7f618ec29565b38ee79186d4f11dc7", 
               "host": "arm-linux-gnueabihf", 
-              "archiveFileName": "eyfi-mega-avr-flasher-linux.tar.gz", 
-              "size": "5345221"
+              "archiveFileName": "eyfi-mega-avr-flasher-linux.tar.xz", 
+              "size": "5334828"
             }
           ]
         }
