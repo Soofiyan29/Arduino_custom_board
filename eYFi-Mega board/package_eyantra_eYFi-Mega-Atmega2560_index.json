@@ -18,6 +18,11 @@
             {"name": "eYFi-Mega Atmega 2560"}
           ],
           "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "eyfi-mega-avr-flasher-custom",
+              "version": "1.0.0"
+            }
           ]
         }
       ],
