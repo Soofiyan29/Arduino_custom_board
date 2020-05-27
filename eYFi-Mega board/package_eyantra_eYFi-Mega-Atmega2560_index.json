@@ -33,10 +33,10 @@
           "systems": [
             {
               "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher.zip?raw=true", 
-              "checksum": "SHA-256:7bcfdc0dfc1b5f9a0ef13ea4070a455d00b468125d5a8a64bacf1ddc021edac9", 
+              "checksum": "SHA-256:29b066bad0fa46a5cff6370c0b0f963948ae0f8609a3759c79ce7b5c2ab6473d", 
               "host": "i686-mingw32", 
               "archiveFileName": "eyfi-mega-avr-flasher.zip", 
-              "size": "5430816"
+              "size": "5431088"
             },
             {
               "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar?raw=true", 
