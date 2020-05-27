@@ -32,14 +32,7 @@
               "host": "i686-mingw32", 
               "archiveFileName": "eyfi-mega-avr-flasher.zip", 
               "size": "5430816"
-            }, 
-            // {
-            //   "url": "https://dl.espressif.com/dl/esptool-2.6.1-macos.tar.gz", 
-            //   "checksum": "SHA-256:f4eb758a301d6902cc9dfcd49d36345d2f075ad123da7cf8132d15cfb7533457", 
-            //   "host": "x86_64-apple-darwin", 
-            //   "archiveFileName": "esptool-2.6.1-macos.tar.gz", 
-            //   "size": "3837085"
-            // }, 
+            },
             {
               "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eyfi-mega-avr-flasher-linux.tar", 
               "checksum": "SHA-256:51fa1c5abc21f50cebcdf3dbc85a17389f3467abfb7c84812fcb4cdf191439e8", 
