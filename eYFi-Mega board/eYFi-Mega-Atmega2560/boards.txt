@@ -1,7 +1,7 @@
 # See: http://code.google.com/p/arduino/wiki/Platforms
 
 menu.cpu=Processor
-
+menu.eYFi-OTA=eYFi-OTA
 ##############################################################
 eyfi.name=eYFi-Mega Atmega2560
 
@@ -21,6 +21,15 @@ eyfi.build.core=arduino
 eyfi.build.variant=eyfi_mega
 # default board may be overridden by the cpu menu
 eyfi.build.board=AVR_MEGA2560
+
+eyfi.menu.eYFi-OTA.disabled=Disabled
+eyfi.menu.eYFi-OTA.disabled.build.defines=-mode=wired
+
+eyfi.menu.eYFi-OTA.wupload=Upload
+eyfi.menu.eYFi-OTA.wupload.build.defines=-mode=wireless-u
+
+eyfi.menu.eYFi-OTA.wuploadflash=Upload & Flash
+eyfi.menu.eYFi-OTA.wuploadflash.build.defines=-mode=wireless-uf
 
 ## Arduino Mega w/ ATmega2560
 ## -------------------------
