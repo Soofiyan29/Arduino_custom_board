@@ -109,4 +109,6 @@ Now for board file we have to remove all the boards configuration except esp32 d
 Also changing the platform.txt file as shown below for respective name and version of the controller,
 Also for both the controller we have to delete all the variants except standard for avr controller and esp32 for esp32 controller as shown below,
 
+Now coming to the json file we have to first add the platform specs in the json file with the following configuration as shown, but in tools and tools dependencies we dont have to put any tools as it is default getting the path from the arduino pre installed tools from the bin folder,
 
+For esp32 we have to add the tools as shown below and also give the **packager** name same as that one of the platform name which is customized by us, as shown below,
