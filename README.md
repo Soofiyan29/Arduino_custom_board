@@ -123,7 +123,10 @@ To add custom bootloader we have to add these files in directory as packages/eYF
 Now we have to add the directory in the platform file and also add one extra menu for custom partition for our board in the menu section of arduino ide,
 This is the addition in the platform.txt file,
 ```ruby
-tools.esptool_py.upload.pattern.linux=python "{path}/{cmd}" --chip esp32 --port "{serial.port}" --baud {upload.speed}  --before default_reset --after hard_reset write_flash -z --flash_mode {build.flash_mode} --flash_freq {build.flash_freq} --flash_size detect 0xe000 "{runtime.platform.path}/tools/partitions/boot_app0.bin" 0x1000 "{runtime.platform.path}/tools/sdk/bin/bootloader_{build.boot}_{build.flash_freq}.bin" 0x10000 "{build.path}/{build.project_name}.bin" 0x8000 "{build.path}/{build.project_name}.partitions.bin"
+tools.esptool_py.upload.pattern.linux=python "{path}/{cmd}" --chip esp32 --port "{serial.port}" --baud {upload.speed}  --before default_reset --after hard_reset 
+write_flash -z --flash_mode {build.flash_mode} --flash_freq {build.flash_freq} --flash_size detect 0xe000 "{runtime.platform.path}/tools/partitions/boot_app0.bin" 
+0x1000 "{runtime.platform.path}/tools/sdk/bin/bootloader_{build.boot}_{build.flash_freq}.bin" 0x10000 "{build.path}/{build.project_name}.bin" 0x8000 
+"{build.path}/{build.project_name}.partitions.bin"
 ```
 This is the addition in the board.txt file which we have just added one partition menu option,
 ```ruby
