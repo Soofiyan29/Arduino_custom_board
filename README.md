@@ -98,17 +98,19 @@ $ arduino-cli upload -p /dev/ttyACM0 --fqbn e-Yantra:avr:eyfi MyFirstSketch
 First we have to create a package which contains the same architecture files and same board files, for example we have to add Atmega2560 board thus we have to add all the files related to avr architecture by copying or finding it on the official github repo of arduino.
 Let's edit the package for Atmega2560 controller first,
 First we have to add all files from the avr package, which contains all these files as shown in the github repo,
-![Githu package info](/Images/1st.png)
+![Github avr package info](/Images/1st.png)
 Now we have to edit the boards file for adding our eYFi-Mega custom board, now we have to add the name of the board and board id i.e. eYFi-Mega Atmega2560 and eyfi respectively, we have to delete all other board configuration except mega one and edit on that configuration as shown,
 ![boards file](/Images/2nd.png)
 We also have to change the board name and version of the board in the platform.txt file as shown below,
 ![Platform file](/Images/3rd.png)
 Now coming to the esp32 controller,
 We have to copy all the package files fom the official esspresif esp32 github repo which contains all the files,
+![Github esp32 package info](/Images/4th.png)
 Now we have to follow same procedure as done in Atmega2560 such as changing board file and platform files,
 Now for board file we have to remove all the boards configuration except esp32 dev module and change the name of the board and board id as shown below,
-
+![board file esp32](/Images/5th.png)
 Also changing the platform.txt file as shown below for respective name and version of the controller,
+![platform file esp32](/Images/6th.png)
 Also for both the controller we have to delete all the variants except standard for avr controller and esp32 for esp32 controller as shown below,
 
 Now coming to the json file we have to first add the platform specs in the json file with the following configuration as shown, but in tools and tools dependencies we dont have to put any tools as it is default getting the path from the arduino pre installed tools from the bin folder,
