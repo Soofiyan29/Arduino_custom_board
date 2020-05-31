@@ -94,6 +94,7 @@ $ arduino-cli upload -p /dev/ttyACM0 --fqbn e-Yantra:avr:eyfi MyFirstSketch
 /dev/ttyACM0 is the port of the board.	
 
 **Now we have to add the board on arduino ide:**
+
 First we have to create a package which contains the same architecture files and same board files, for example we have to add Atmega2560 board thus we have to add all the files related to avr architecture by copying or finding it on the official github repo of arduino.
 Let's edit the package for Atmega2560 controller first,
 First we have to add all files from the avr package, which contains all these files as shown in the github repo,
@@ -107,3 +108,5 @@ Now for board file we have to remove all the boards configuration except esp32 d
 
 Also changing the platform.txt file as shown below for respective name and version of the controller,
 Also for both the controller we have to delete all the variants except standard for avr controller and esp32 for esp32 controller as shown below,
+
+
