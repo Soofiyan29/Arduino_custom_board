@@ -98,6 +98,7 @@ $ arduino-cli upload -p /dev/ttyACM0 --fqbn e-Yantra:avr:eyfi MyFirstSketch
 First we have to create a package which contains the same architecture files and same board files, for example we have to add Atmega2560 board thus we have to add all the files related to avr architecture by copying or finding it on the official github repo of arduino.
 Let's edit the package for Atmega2560 controller first,
 First we have to add all files from the avr package, which contains all these files as shown in the github repo,
+![Githu package info](/Images/1st.png)
 Now we have to edit the boards file for adding our eYFi-Mega custom board, now we have to add the name of the board and board id i.e. eYFi-Mega Atmega2560 and eyfi respectively, we have to delete all other board configuration except mega one and edit on that configuration as shown,
 We also have to change the board name and version of the board in the platform.txt file as shown below,
 
@@ -112,3 +113,26 @@ Also for both the controller we have to delete all the variants except standard 
 Now coming to the json file we have to first add the platform specs in the json file with the following configuration as shown, but in tools and tools dependencies we dont have to put any tools as it is default getting the path from the arduino pre installed tools from the bin folder,
 
 For esp32 we have to add the tools as shown below and also give the **packager** name same as that one of the platform name which is customized by us, as shown below,
+
+Adding custom bootloader for esp32 and custom partition for esp32,
+To add custom bootloader we have to add these files in directory as packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/partition, here we have to add the eyfi_mega_default.csv which is our custom partition, now we have to add the directory in the platform file and also add one extra menu for custom partition for our board in the menu section of arduino ide,
+This is the addition in the platform.txt file,
+
+This is the addition in the board.txt file which we have just added one partition menu option,
+
+We also have to add custom bootloader for esp32 in the directory packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/ here we have to add a folder eyfi-mga and add all these files,
+
+Now we have to add tools for esp32 and Atmega2560 to upload and flash our program to both the controller through OTA, thus we have to modify the json file for each board and also add the compressed file for these tools,
+For Atmega2560 we have to first store these three files in a folder as shown and then zip this folder and copy the github directory of th file,
+
+Now we have to paste the link in the url of the tools and checksum value and archive filename of the zip as shown below,
+
+For esp32 we have to create one folder named esptool_py and then paste all the flashers and then zip the file as shown below,
+
+Now we have to edit the platform and json files, for platform.txt we have to add the directory for flashing tools as shown below 
+For Atmega250,
+
+For esp32,
+
+We then also have to edit the json file for the same,
+
