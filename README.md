@@ -116,9 +116,11 @@ Also for both the controller we have to delete all the variants except **standar
 Now coming to the json file we have to first add the platform specs in the json file with the following configuration as shown, but in tools and tools dependencies we dont have to put any tools as it is default getting the path from the arduino pre installed tools from the bin folder,
 ![json avr](/Images/7th.png)
 For esp32 we have to add the tools as shown below and also give the **packager** name same as that one of the platform name which is customized by us, as shown below,
-
+![json esp32](/Images/8th.png)
 Adding custom bootloader for esp32 and custom partition for esp32,
-To add custom bootloader we have to add these files in directory as packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/partition, here we have to add the eyfi_mega_default.csv which is our custom partition, now we have to add the directory in the platform file and also add one extra menu for custom partition for our board in the menu section of arduino ide,
+To add custom bootloader we have to add these files in directory as packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/partition, here we have to add the eyfi_mega_default.csv which is our custom partition,
+![partition files](/Images/9th.png)
+Now we have to add the directory in the platform file and also add one extra menu for custom partition for our board in the menu section of arduino ide,
 This is the addition in the platform.txt file,
 
 This is the addition in the board.txt file which we have just added one partition menu option,
