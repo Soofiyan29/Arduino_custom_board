@@ -92,3 +92,18 @@ And then note the Port of the particular board and now paste here by running:
 $ arduino-cli upload -p /dev/ttyACM0 --fqbn e-Yantra:avr:eyfi MyFirstSketch
 ```
 /dev/ttyACM0 is the port of the board.	
+
+**Now we have to add the board on arduino ide:**
+First we have to create a package which contains the same architecture files and same board files, for example we have to add Atmega2560 board thus we have to add all the files related to avr architecture by copying or finding it on the official github repo of arduino.
+Let's edit the package for Atmega2560 controller first,
+First we have to add all files from the avr package, which contains all these files as shown in the github repo,
+Now we have to edit the boards file for adding our eYFi-Mega custom board, now we have to add the name of the board and board id i.e. eYFi-Mega Atmega2560 and eyfi respectively, we have to delete all other board configuration except mega one and edit on that configuration as shown,
+We also have to change the board name and version of the board in the platform.txt file as shown below,
+
+Now coming to the esp32 controller,
+We have to copy all the package files fom the official esspresif esp32 github repo which contains all the files,
+Now we have to follow same procedure as done in Atmega2560 such as changing board file and platform files,
+Now for board file we have to remove all the boards configuration except esp32 dev module and change the name of the board and board id as shown below,
+
+Also changing the platform.txt file as shown below for respective name and version of the controller,
+Also for both the controller we have to delete all the variants except standard for avr controller and esp32 for esp32 controller as shown below,
