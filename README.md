@@ -100,8 +100,9 @@ Let's edit the package for Atmega2560 controller first,
 First we have to add all files from the avr package, which contains all these files as shown in the github repo,
 ![Githu package info](/Images/1st.png)
 Now we have to edit the boards file for adding our eYFi-Mega custom board, now we have to add the name of the board and board id i.e. eYFi-Mega Atmega2560 and eyfi respectively, we have to delete all other board configuration except mega one and edit on that configuration as shown,
+![boards file](/Images/2nd.png)
 We also have to change the board name and version of the board in the platform.txt file as shown below,
-
+![Platform file](/Images/3rd.png)
 Now coming to the esp32 controller,
 We have to copy all the package files fom the official esspresif esp32 github repo which contains all the files,
 Now we have to follow same procedure as done in Atmega2560 such as changing board file and platform files,
@@ -135,4 +136,6 @@ For Atmega250,
 For esp32,
 
 We then also have to edit the json file for the same,
+
+For flashing and uploading the code we have to add a menu in the arduino ide thus we have to make changes in the boards.txt file,
 
