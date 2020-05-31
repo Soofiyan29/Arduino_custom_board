@@ -137,18 +137,50 @@ We also have to add custom bootloader for esp32 in the directory packages/eYFi-M
 ![bootloader files](/Images/10th.png)
 ![bootloader files](/Images/11th.png)
 Now we have to add tools for esp32 and Atmega2560 to upload and flash our program to both the controller through OTA, thus we have to modify the json file for each board and also add the compressed file for these tools,
+
 For Atmega2560 we have to first store these three files in a folder as shown and then zip this folder and copy the github directory of th file,
-
+![tools files](/Images/12th.png)
 Now we have to paste the link in the url of the tools and checksum value and archive filename of the zip as shown below,
-
+![json file for tools addition](/Images/13th.png)
 For esp32 we have to create one folder named esptool_py and then paste all the flashers and then zip the file as shown below,
-
+![json file for tools addition esp32](/Images/14th.png)
 Now we have to edit the platform and json files, for platform.txt we have to add the directory for flashing tools as shown below 
 For Atmega250,
+```ruby
+tools.avrdude.path={runtime.tools.avrdude.path}
 
-For esp32,
+## eYFi-Mega AVR Flasher
+tools.avrdude.cmd.path={runtime.platform.path}/tools/eyfi-mega-avr-flasher-custom
+tools.avrdude.exe.path={path}/bin/
+
+```
+For esp32 we dont have to change the flasher tool directory as we have added the tools under esptool_py which is already a tool of esp32 so no need to chnage directory,
 
 We then also have to edit the json file for the same,
 
 For flashing and uploading the code we have to add a menu in the arduino ide thus we have to make changes in the boards.txt file,
+For Atmega2560,
+```ruby
+eyfi.menu.eYFi-OTA.disabled=Disabled
+eyfi.menu.eYFi-OTA.disabled.build.defines=-mode=wired
 
+eyfi.menu.eYFi-OTA.wupload=Upload
+eyfi.menu.eYFi-OTA.wupload.build.defines=-mode=wireless-u
+
+eyfi.menu.eYFi-OTA.wuploadflash=Upload & Flash
+eyfi.menu.eYFi-OTA.wuploadflash.build.defines=-mode=wireless-uf
+```
+
+For esp32,
+```ruby
+
+eyfi_esp.menu.eYFi-OTA-ESP32.disabled=Disabled
+eyfi_esp.menu.eYFi-OTA-ESP32.disabled.builde32.defines=-mode=wired
+
+eyfi_esp.menu.eYFi-OTA-ESP32.wupload=Upload
+eyfi_esp.menu.eYFi-OTA-ESP32.wupload.builde32.defines=-mode=wireless-u
+
+eyfi_esp.menu.eYFi-OTA-ESP32.wuploadflash=Upload & Flash
+eyfi_esp.menu.eYFi-OTA-ESP32.wuploadflash.builde32.defines=-mode=wireless-uf
+
+```
