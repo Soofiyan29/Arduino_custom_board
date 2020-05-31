@@ -134,7 +134,8 @@ eyfi_esp.menu.PartitionScheme.eyfi_mega_default=eYFi-Mega Default (1MB OTA/2MB A
 eyfi_esp.menu.PartitionScheme.default.build.partitions=eyfi_mega_default
 ```
 We also have to add custom bootloader for esp32 in the directory packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/ here we have to add a folder eyfi-mga and add all these files,
-
+![bootloader files](/Images/10th.png)
+![bootloader files](/Images/11th.png)
 Now we have to add tools for esp32 and Atmega2560 to upload and flash our program to both the controller through OTA, thus we have to modify the json file for each board and also add the compressed file for these tools,
 For Atmega2560 we have to first store these three files in a folder as shown and then zip this folder and copy the github directory of th file,
 
