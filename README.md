@@ -126,7 +126,10 @@ This is the addition in the platform.txt file,
 tools.esptool_py.upload.pattern.linux=python "{path}/{cmd}" --chip esp32 --port "{serial.port}" --baud {upload.speed}  --before default_reset --after hard_reset write_flash -z --flash_mode {build.flash_mode} --flash_freq {build.flash_freq} --flash_size detect 0xe000 "{runtime.platform.path}/tools/partitions/boot_app0.bin" 0x1000 "{runtime.platform.path}/tools/sdk/bin/bootloader_{build.boot}_{build.flash_freq}.bin" 0x10000 "{build.path}/{build.project_name}.bin" 0x8000 "{build.path}/{build.project_name}.partitions.bin"
 ```
 This is the addition in the board.txt file which we have just added one partition menu option,
-
+```ruby
+eyfi_esp.menu.PartitionScheme.eyfi_mega_default=eYFi-Mega Default (1MB OTA/2MB APP/700KB SPIFFS)
+eyfi_esp.menu.PartitionScheme.default.build.partitions=eyfi_mega_default
+```
 We also have to add custom bootloader for esp32 in the directory packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/ here we have to add a folder eyfi-mga and add all these files,
 
 Now we have to add tools for esp32 and Atmega2560 to upload and flash our program to both the controller through OTA, thus we have to modify the json file for each board and also add the compressed file for these tools,
