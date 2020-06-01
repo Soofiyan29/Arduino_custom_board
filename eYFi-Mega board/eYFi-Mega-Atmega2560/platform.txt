@@ -100,8 +100,9 @@ recipe.preproc.macros="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {
 tools.avrdude.path={runtime.tools.avrdude.path}
 
 ## eYFi-Mega AVR Flasher
-tools.avrdude.cmd.path=/packages/eYFi-Mega-Atmega2560-board/tools/eyfi-mega-avr-flasher-custom/1.0.0/eyfi-flasher
-tools.avrdude.exe.path=/packages/eYFi-Mega-Atmega2560-board/tools/eyfi-mega-avr-flasher-custom/1.0.0/
+tools.avrdude.cmd.path=/AppData/Local/Arduino15/packages/eYFi-Mega-Atmega2560-board/tools/eyfi-mega-avr-flasher-custom/1.0.0/eyfi-flasher
+tools.avrdude.exe.path=/AppData/Local/Arduino15/packages/eYFi-Mega-Atmega2560-board/tools/eyfi-mega-avr-flasher-custom/1.0.0/
+
 
 tools.avrdude.config.path={path}/etc/avrdude.conf
 
