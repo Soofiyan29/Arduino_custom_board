@@ -28,7 +28,7 @@
       ],
       "tools":[
         {
-        "version": "1.0.0", 
+          "version": "1.0.0", 
           "name": "avr-flasher", 
           "systems": [
             {
