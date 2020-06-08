@@ -6,27 +6,61 @@
       "websiteURL": "http://products.e-yantra.org/eyfi-mega/", 
       "platforms": [
         {
-          "name": "eYFi-Mega (Atmega2560)",
+          "name": "eYFi-Mega (ATmega2560)",
           "architecture": "avr",
           "version": "1.0",
           "category": "Contributed",
           "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/eYFi-Mega%20board/eYFi-Mega-Atmega2560.zip?raw=true",
           "archiveFileName": "eYFi-Mega-Atmega2560.zip",
-          "checksum": "SHA-256:43eeca497aa8b3b055494ee5edb0e036d3bc955c7c0f8f4eb7b36e1387901dce",
-          "size": "14655378",
+          "checksum": "SHA-256:a3e2634cafd39bc12e5cb9f047f89e9ae9f0a1afb5a427afb852ef01df4903a7s",
+          "size": "14655445",
           "boards": [
-            {"name": "eYFi-Mega Atmega 2560"}
+            {"name": "eYFi-Mega ATmega2560"}
           ],
           "toolsDependencies": [
             {
               "packager": "eYFi-Mega-Atmega2560-board",
-              "name": "eyfi-mega-avr-flasher-custom",
+              "name": "avr-flasher",
               "version": "1.0.0"
             }
           ]
         }
       ],
       "tools":[
+        {
+        "version": "1.0.0", 
+          "name": "avr-flasher", 
+          "systems": [
+            {
+              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/windows.zip", 
+              "checksum": "SHA-256:7047deaa7c7ba0618ece87c7630138a23afa3e66cf3f19602a47d450b0fc312c", 
+              "host": "i686-mingw32", 
+              "archiveFileName": "windows.zip", 
+              "size": "8655838"
+            },
+            {
+              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/linux.tar.gz", 
+              "checksum": "SHA-256:3991215813d73c92bdb68abef470ee0d1d99569954b60980bc83e47a12dd41da", 
+              "host": "x86_64-pc-linux-gnu", 
+              "archiveFileName": "linux.tar.gz", 
+              "size": "6844792"
+            }, 
+            {
+              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/linux.tar.gz", 
+              "checksum": "SHA-256:3991215813d73c92bdb68abef470ee0d1d99569954b60980bc83e47a12dd41da", 
+              "host": "i686-pc-linux-gnu", 
+              "archiveFileName": "linux.tar.gz", 
+              "size": "6844792"
+            }, 
+            {
+              "url": "https://github.com/Soofiyan29/e-Yantra-Atmega2560/blob/master/linux.tar.gz", 
+              "checksum": "SHA-256:3991215813d73c92bdb68abef470ee0d1d99569954b60980bc83e47a12dd41da", 
+              "host": "arm-linux-gnueabihf", 
+              "archiveFileName": "linux.tar.gz", 
+              "size": "6844792"
+            }
+          ]
+        }
       ]
     }
   ]
