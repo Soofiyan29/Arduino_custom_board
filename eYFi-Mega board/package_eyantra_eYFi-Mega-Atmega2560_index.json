@@ -18,14 +18,10 @@
             {"name": "eYFi-Mega ATmega2560"}
           ],
           "toolsDependencies": [
-            {
-            }
           ]
         }
       ],
       "tools":[
-        {
-        }
       ]
     }
   ]
