@@ -3,7 +3,7 @@
 menu.cpu=Processor
 menu.eYFi-OTA=eYFi-OTA
 ##############################################################
-eyfi.name=eYFi-Mega ATmega2560
+eyfi.name=eYFi-Mega (ATmega2560 Section)
 
 eyfi.vid.0=0x0403
 eyfi.pid.0=0x6001
